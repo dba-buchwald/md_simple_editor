@@ -14,21 +14,19 @@ md_simple_editor = () ->
       option = option[0].toString()
 
       text = if option == 'md_h1'
-               "# Your Title here"
+               "# Level 1 header"
             else if option == 'md_h2'
-               "## Your Title here"
+               "## Level 2 header"
             else if option == 'md_h3'
-               "### Your Title here"
+               "###  Level 3 header"
             else if option == 'md_h4'
-               "#### Your Title here"
-            else if option == 'md_h5'
-               "##### Your Title here"
+               "#### Level 4 header"
             else if option == 'md_italic'
                "_Your italic text here_"
             else if option == 'md_bold'
                "__Your bold text here__"
             else if option == 'md_list-ul'
-               "\n\n* Item 1\n* Item 2\n* Item 3 \n\n<br>"
+               "\n* Item 1\n* Item 2\n* Item 3"
             else if option == 'md_list-ol'
                "\n\n1. Item 1\n2. Item 2\n3. Item 3 \n\n<br> "
             else if option == 'md_indent'
@@ -43,7 +41,7 @@ md_simple_editor = () ->
                "\n\t Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut aliquet velit. Nam fermentum, mi quis egestas ornare, massa velit pharetra ante, sed
                       pellentesque tortor nisl non quam. Nunc eget egestas orci.\n\n<br> "
             else if option == 'md_link'
-              "\n[This is a link](http://google.com)\n"
+              "[Link text here](http://example.com)"
             else if option == 'md_camera-retro'
               "\n![Alt](https://www.google.com.co/images/srpr/logo11w.png)\n"
 
